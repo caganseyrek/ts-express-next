@@ -23,7 +23,7 @@ This is a boilerplate template for building backend applications with Express an
 Main folder structure of the project looks like this:
 
 ```
-express-ts-sample/
+express-ts-template/
 ├── src/
 │   ├── app/
 │   ├── constants/
