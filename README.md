@@ -1,8 +1,8 @@
-# Express-TS Sample
+# Express-TS Template
 
-![GitHub License](https://img.shields.io/github/license/caganseyrek/express-ts-sample)
-![GitHub repo size](https://img.shields.io/github/repo-size/caganseyrek/express-ts-sample)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/caganseyrek/express-ts-sample)
+![GitHub License](https://img.shields.io/github/license/caganseyrek/express-ts-template)
+![GitHub repo size](https://img.shields.io/github/repo-size/caganseyrek/express-ts-template)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/caganseyrek/express-ts-template)
 
 ## Overview
 
@@ -216,4 +216,4 @@ Feel free to fork this project and create pull requests for improvements. Any is
 
 ## License
 
-This project is open-source and licensed under [MIT License](https://github.com/caganseyrek/WalletTuner/blob/main/LICENSE).
+This project is open-source and licensed under [MIT License](https://github.com/caganseyrek/express-ts-template/blob/main/LICENSE).
