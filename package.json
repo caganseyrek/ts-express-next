@@ -1,75 +1,22 @@
 {
-  "name": "express-ts-sample",
+  "name": "ts-express-next",
   "private": true,
-  "version": "0.0.0",
-  "description": "",
   "scripts": {
-    "dev": "nodemon --exec tsx -r tsconfig-paths/register src/main.ts",
-    "build": "tsc -b",
-    "lint": "eslint .",
-    "format": "prettier --write ."
-  },
-  "keywords": [
-    "api",
-    "backend",
-    "express",
-    "typescript"
-  ],
-  "author": {
-    "name": "Your Name",
-    "url": "https://example.com"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/<yourname>/<repository>",
-  "dependencies": {
-    "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.3",
-    "cookie-parser": "^1.4.7",
-    "dayjs": "^1.11.13",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "express-rate-limit": "^7.5.0",
-    "helmet": "^8.0.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.5",
-    "morgan": "^1.10.0",
-    "randombytes": "^2.1.0",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1",
-    "tsx": "^4.19.2",
-    "winston": "^3.17.0",
-    "zod": "^3.24.1"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "@types/bcrypt": "^5.0.2",
-    "@types/body-parser": "^1.19.5",
-    "@types/cookie-parser": "^1.4.8",
-    "@types/express": "^4.17.21",
-    "@types/jsonwebtoken": "^9.0.8",
-    "@types/morgan": "^1.9.9",
-    "@types/node": "^20.17.16",
-    "@types/randombytes": "^2.0.3",
-    "@types/swagger-jsdoc": "^6.0.4",
-    "@types/swagger-ui-express": "^4.1.7",
-    "@eslint/js": "^9.19.0",
-    "@types/eslint-config-prettier": "^6.11.3",
-    "eslint-config-prettier": "^10.0.1",
-    "typescript-eslint": "^8.22.0",
-    "eslint": "^9.19.0",
-    "globals": "^15.14.0",
-    "nodemon": "^3.1.9",
-    "prettier": "3.3.3",
-    "tsconfig-paths": "^4.2.0",
-    "tslib": "^2.8.1",
-    "typescript": "^5.7.3"
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "turbo": "^2.4.0",
+    "typescript": "5.7.3"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "bcrypt",
-      "@scarf/scarf",
-      "esbuild",
-      "sharp"
-    ]
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "denoland.vscode-deno",
+    "ms-azuretools.vscode-docker",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "mhutchie.git-graph",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.js-debug-nightly",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "gruntfuggly.todo-tree",
+    "dsznajder.es7-react-js-snippets"
+  ]
+}
