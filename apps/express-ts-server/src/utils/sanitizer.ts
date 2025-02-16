@@ -30,7 +30,7 @@ class Sanitizer {
    */
   private static _sanitize(value: unknown, _visitedObjects: WeakSet<object>): unknown {
     if (typeof value === "string") {
-      return value.replace(/[*+?^${}()|[\]]/g, "\\$&");
+      return value.replace(/[*+?^${}()|[\]\\]/g, "\\$&");
     } else if (Array.isArray(value)) {
       return value.map((e) => this._sanitize(e, _visitedObjects));
     } else if (value && typeof value === "object") {
