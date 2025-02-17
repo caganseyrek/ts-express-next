@@ -6,13 +6,13 @@ This is a boilerplate template for building backend applications with Express an
 
 ## Features
 
-- Express & TypeScript: Integrates Express with TypeScript for type safety.
-- Mongoose: Provides a schema-based solution to model data in MongoDB.
-- Nodemon: Automatically restarts the server on file changes during development.
-- Zod: Utilized for request validation and environment variable parsing.
-- Helmet: Secures HTTP headers to enhance security.
-- Winston: Logging middleware for structured logs to both console and log files.
-- Layered Architecture: Implements a clean architecture with separation of concerns.
+- **Express & TypeScript**: Integrates Express with TypeScript for type safety.
+- **Mongoose**: Provides a schema-based solution to model data in MongoDB.
+- **Nodemon**: Automatically restarts the server on file changes during development.
+- **Zod**: Utilized for request validation and environment variable parsing.
+- **Helmet**: Secures HTTP headers to enhance security.
+- **Winston**: Logging middleware for structured logs to both console and log files.
+- **Layered Architecture**: Implements a clean architecture with separation of concerns.
 
 ## File and Folder Structure
 
