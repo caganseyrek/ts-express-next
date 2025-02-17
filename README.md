@@ -40,6 +40,10 @@ pnpm install
 pnpm dev
 ```
 
+## Documentation
+
+Seperate documentations for both next.js and express.js apps can be found in `docs/` folder or [here](https://caganseyrek.com/projects/ts-express-next)
+
 ## Contributing
 
 Feel free to fork this project and create pull requests for improvements. Any issues or feature requests are also welcome!

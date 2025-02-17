@@ -1,5 +1,7 @@
 # Express-TS Server
 
+> This documentation is also available [here](https://caganseyrek.com/projects/ts-express-next)
+
 This is a boilerplate template for building backend applications with Express and TypeScript, featuring various utilities and a clean, modular architecture. It includes essential tools and best practices to streamline development and improve maintainability.
 
 ## Features
