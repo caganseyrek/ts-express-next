@@ -1,12 +1,6 @@
-# Express-TS Template
+# Express-TS Server
 
-![GitHub License](https://img.shields.io/github/license/caganseyrek/express-ts-template)
-![GitHub repo size](https://img.shields.io/github/repo-size/caganseyrek/express-ts-template)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/caganseyrek/express-ts-template)
-
-## Overview
-
-This is a boilerplate template for building backend applications with Express and TypeScript, integrated with various utilities and a clean, modular architecture. It includes essential tools and best practices to help streamline development and maintainability.
+This is a boilerplate template for building backend applications with Express and TypeScript, featuring various utilities and a clean, modular architecture. It includes essential tools and best practices to streamline development and improve maintainability.
 
 ## Features
 
@@ -23,7 +17,7 @@ This is a boilerplate template for building backend applications with Express an
 Main folder structure of the project looks like this:
 
 ```
-express-ts-template/
+express-ts-server/
 ├── src/
 │   ├── app/
 │   ├── constants/
@@ -53,8 +47,10 @@ src/
 │   │   ├── middlewares.ts
 │   │   └── routes.ts
 │   ├── errors/
-│   │   ├── errorHandler.ts
 │   │   └── errors.ts
+│   ├── middleware/
+│   │   ├── errorHandler.ts
+│   │   └── requestSanitizer.ts
 │   ├── extensions/
 │   │   └── swagger.ts
 │   ├── appBuilder.ts
@@ -71,7 +67,9 @@ src/
   - **Routes**: Applies all resources' routers to the express application instance.
 - **Errors**
   - **Errors**: Contains a custom `AppError`, and other custom error classes (such as `UnauthorizedError`) that extends AppError.
+- **Middleware**:
   - **ErrorHandler**: Applies the logic for handling custom errors or unknown errors to the express application instance.
+  - **RequestSanitizer**: Contains a custom sanitizer that sanitizes queries and objects/values from the request as a middleware (uses the sanitizer from the utils folder).
 - **Extensions**
   - **Swagger**: Applies the config for setting up and serving the Swagger API documentation.
 - **Constants**
@@ -108,11 +106,13 @@ src/
 ```
 src/
 ├── middlewares/
-│   └── auth.ts
+│   ├── auth.ts
+│   └── validator.ts
 ...
 ```
 
 - **Auth**: Provides a middleware for applying custom authentication validation logic.
+- **Validator**: Contains a method for validating payloads from request body with the schemas in the `schemas/` folder.
 
 ### Resources
 
@@ -156,15 +156,13 @@ src/
 ├── utils/
 │   ├── converter.ts
 │   ├── logger.ts
-│   ├── sanitizer.ts
-│   └── validator.ts
+│   └── sanitizer.ts
 ...
 ```
 
 - **Converter**: Contains a utility method for converting string into a mongoose ObjectId.
 - **Logger**: Contains a winston instance for logging into console and saving logs into a log file.
-- **Sanitizer**: Contains a custom sanitizer that sanitizes queries and objects/values before.
-- **Validator**: Contains a method for validating payloads from request body with the schemas in the `schemas/` folder.
+- **Sanitizer**: Contains a custom sanitizer that sanitizes queries and objects/values.
 
 ### Main
 
@@ -178,42 +176,6 @@ src/
 - **globals.d.ts**: Contains global type definitions that is shared across the application.
 - **main.ts**: The entry point for the application where express app is initialized and passed into the `appBuilder`.
 
-## Setup
-
-### Prerequisites
-
-To setup the project locally, ensure following are present on your system:
-
-- Node.js (v20 or higher)
-- MongoDB Database
-- Bash Shell for running provided scripts (This project is developed in a GNU/Linux environment using WSL2 with Ubuntu. However, you can set up and run it on other operating systems by installing the required tools.)
-
-### Installation
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/caganseyrek/express-ts-template.git
-cd path/to/express-ts-template
-```
-
-2. Install the dependencies
-
-```bash
-pnpm install
-```
-
-3. Setup the environment variables. Remove the `.sample` suffix from the `.env.sample` file and put the required variables into the file.
-4. Run the application
-
-```bash
-pnpm dev
-```
-
-## Contributing
-
-Feel free to fork this project and create pull requests for improvements. Any issues or feature requests are also welcome!
-
 ## License
 
-This project is open-source and licensed under [MIT License](https://github.com/caganseyrek/express-ts-template/blob/main/LICENSE).
+This project is open-source and licensed under [MIT License](https://github.com/caganseyrek/ts-express-next/blob/main/LICENSE).
