@@ -6,9 +6,9 @@ This is a boilerplate template for building frontend applications with Next.js a
 
 ## Features
 
-- Next.js & TypeScript: Modern and type-safe development environment.
-- Tailwind CSS: Utility-first styling for rapid UI development.
-- Shadcn/ui: Beautiful, accessible, and customizable UI components.
+- **Next.js & TypeScript**: Combines Next.js with TypeScript for a modern and type-safe development environment.
+- **Tailwind CSS**: Provides a utility-first approach to styling for rapid UI development.
+- **Shadcn/ui**: Offers beautiful, accessible, and customizable UI components for a seamless user experience.
 
 ## License
 
