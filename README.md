@@ -12,23 +12,23 @@ This is a boilerplate template for building backend applications with Express an
 
 1. Clone the repository
 
-```bash
-git clone https://github.com/caganseyrek/ts-express-next.git
-cd path/to/ts-express-next
-```
+   ```bash
+   git clone https://github.com/caganseyrek/ts-express-next.git
+   cd path/to/ts-express-next
+   ```
 
 2. Install the dependencies
 
-```bash
-pnpm install
-```
+   ```bash
+   pnpm install
+   ```
 
 3. Setup the environment variables. Remove the `.sample` suffix from the `.env.sample` file and put the required variables into the file.
 4. Run the application
-
-```bash
-pnpm dev
-```
+ 
+   ```bash
+   pnpm dev
+   ```
 
 ## Documentation
 
