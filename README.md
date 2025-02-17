@@ -8,17 +8,7 @@
 
 This is a boilerplate template for building backend applications with Express and TypeScript, frontend applications with Next and Typescript, or full-stack applications with both in a monorepo. It includes essential tools and best practices to help streamline development and maintainability.
 
-## Setup
-
-### Prerequisites
-
-To setup the project locally, ensure following are present on your system/ready to be used:
-
-- Node.js (v20 or higher)
-- MongoDB Database
-- Bash Shell for running provided scripts (This project is developed in a GNU/Linux environment using WSL2 with Ubuntu. However, you can set up and run it on other operating systems by installing the required tools.)
-
-### Installation
+## Installation and Setup
 
 1. Clone the repository
 
@@ -42,7 +32,7 @@ pnpm dev
 
 ## Documentation
 
-Seperate documentations for both next.js and express.js apps can be found in `docs/` folder or [here](https://caganseyrek.com/projects/ts-express-next)
+For detailed documentation, please see the [project documentation](https://caganseyrek.com/projects/ts-express-next).
 
 ## Contributing
 
