@@ -14,7 +14,7 @@ This is a boilerplate template for building backend applications with Express an
 - **Winston**: Logging middleware for structured logs to both console and log files.
 - **Layered Architecture**: Implements a clean architecture with separation of concerns.
 
-## File and Folder Structure
+## Files and Folder Structure
 
 Main folder structure of the project looks like this:
 
@@ -36,7 +36,7 @@ express-ts-server/
 └── tsconfig.json
 ```
 
-### Core Components (`app`)
+### Core Components
 
 ```
 src/
@@ -60,22 +60,22 @@ src/
 ...
 ```
 
-- **Config**: Contains all the environment variables, which are parsed and validated with Zod to ensure proper configuration.
-- **AppBuilder**: Applies all the core components to the express application instance, connects to the database, then starts the http server.
-- **Core**
-  - **Handlers**: Applies internal error handler and 404 error handler to the express application instance.
-  - **HttpServer**: Handles starting the HTTP server and gracefully shutting it down when stopping the Express application.
-  - **Middlewares**: Applies all the external middlewares (such as `express-rate-limit`, `helmet` etc.) to the express application instance.
-  - **Routes**: Applies all resources' routers to the express application instance.
-- **Errors**
-  - **Errors**: Contains a custom `AppError`, and other custom error classes (such as `UnauthorizedError`) that extends AppError.
-- **Middleware**:
-  - **ErrorHandler**: Applies the logic for handling custom errors or unknown errors to the express application instance.
-  - **RequestSanitizer**: Contains a custom sanitizer that sanitizes queries and objects/values from the request as a middleware (uses the sanitizer from the utils folder).
-- **Extensions**
-  - **Swagger**: Applies the config for setting up and serving the Swagger API documentation.
-- **Constants**
-  - **HelmetOptions**: Contains all the configurations for `helmet` middleware.
+1. **Config**: Contains all the environment variables, which are parsed and validated with Zod to ensure proper configuration.
+2. **AppBuilder**: Applies all the core components to the express application instance, connects to the database, then starts the http server.
+3. **Core**
+   - **Handlers**: Applies internal error handler and 404 error handler to the express application instance.
+   - **HttpServer**: Handles starting the HTTP server and gracefully shutting it down when stopping the Express application.
+   - **Middlewares**: Applies all the external middlewares (such as `express-rate-limit`, `helmet` etc.) to the express application instance.
+   - **Routes**: Applies all resources' routers to the express application instance.
+4. **Errors**
+   - **Errors**: Contains a custom `AppError`, and other custom error classes (such as `UnauthorizedError`) that extends AppError.
+5. **Middleware**:
+   - **ErrorHandler**: Applies the logic for handling custom errors or unknown errors to the express application instance.
+   - **RequestSanitizer**: Contains a custom sanitizer that sanitizes queries and objects/values from the request as a middleware (uses the sanitizer from the utils folder).
+6. **Extensions**
+   - **Swagger**: Applies the config for setting up and serving the Swagger API documentation.
+7. **Constants**
+   - **HelmetOptions**: Contains all the configurations for `helmet` middleware.
 
 ### Constants
 
