@@ -52,7 +52,7 @@
     "@types/randombytes": "^2.0.3",
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.7",
-    "@eslint/js": "^9.19.0",
+    "@eslint/js": "^9.21.0",
     "@types/eslint-config-prettier": "^6.11.3",
     "eslint-config-prettier": "^10.0.1",
     "typescript-eslint": "^8.22.0",
