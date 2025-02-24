@@ -32,7 +32,7 @@ This is a boilerplate template for building backend applications with Express an
 
 ## Documentation
 
-For detailed documentation, please see the [project documentation](https://caganseyrek.com/projects/ts-express-next).
+For detailed documentation, please see the [project wiki](https://github.com/caganseyrek/ts-express-next/wiki).
 
 ## Contributing
 
